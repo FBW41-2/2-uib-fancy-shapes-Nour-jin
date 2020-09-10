@@ -1,8 +1,40 @@
-html, body {
-    padding: 0;
-    margin: 0;
+html,
+body {
+	padding: 0;
+	margin: 0;
 }
 
 section {
-    margin-top: 10px;
+	margin-top: 10px;
+}
+.task-one {
+	margin: 50px;
+}
+.task-one p::before {
+	content: 'Once upon a time ...';
+	color: coral;
+}
+
+.task-one p::after {
+	content: '...The end.';
+	color: coral;
+}
+
+img {
+	width: 30%;
+}
+
+.task-two {
+	position: relative;
+	left: 50px;
+	width: 500px;
+	height: 500px;
+	background-image: url(/assets/beach.jpg);
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.task-three {
+	position: relative;
+	left: 50px;
+	transform: scaley(-1);
 }
